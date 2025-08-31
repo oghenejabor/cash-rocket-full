@@ -1,0 +1,25 @@
+workflows:
+  ios-release:
+    name: iOS Release
+    environment:
+      flutter: stable
+      xcode: latest
+    scripts:
+      - name: Get Flutter packages
+        script: |
+          flutter pub get
+      - name: Update CocoaPods
+        script: |
+          sudo gem install cocoapods
+          pod repo update
+      - name: Install iOS Pods
+        script: |
+          cd ios
+          pod install
+          cd ..
+      - name: Build iOS IPA
+        script: |
+          flutter build ipa --export-method app-store
+    artifacts:
+      - build/ios/ipa/Runner.ipa
+
