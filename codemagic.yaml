@@ -5,17 +5,17 @@ workflows:
       flutter: stable
       xcode: latest
     scripts:
+      - name: Upgrade Flutter dependencies
+        script: |
+          flutter pub upgrade
       - name: Get Flutter packages
         script: |
           flutter pub get
-      - name: Update CocoaPods
-        script: |
-          sudo gem install cocoapods
-          pod repo update
-      - name: Install iOS Pods
+      - name: Update CocoaPods repos
         script: |
           cd ios
-          pod install
+          rm -f Podfile.lock
+          pod install --repo-update
           cd ..
       - name: Build iOS IPA
         script: |
