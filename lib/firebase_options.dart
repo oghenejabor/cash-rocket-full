@@ -61,26 +61,26 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyCn1bx_Q1SoxGyICYaIWeWgY1UJ88cZyXA',
-    appId: '1:881157721637:ios:087981899d5ebc59ec39cc',
+    appId: '1:881157721637:ios:4b01f6edc42ff964ec39cc',
     messagingSenderId: '881157721637',
     projectId: 'exnay-a6d8d',
     databaseURL: 'https://exnay-a6d8d-default-rtdb.firebaseio.com',
     storageBucket: 'exnay-a6d8d.firebasestorage.app',
     androidClientId: '881157721637-8kdhnu5vpvts77jua3htce8vl1dai22a.apps.googleusercontent.com',
-    iosClientId: '881157721637-e1fk30mahmgqkshtta00pntk8u06q3m3.apps.googleusercontent.com',
-    iosBundleId: 'app.ngawin.ios',
+    iosClientId: '881157721637-b35bsog4sm2ao5gpoivsstffiq5d06v8.apps.googleusercontent.com',
+    iosBundleId: 'app.ngawinapp.ios',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCn1bx_Q1SoxGyICYaIWeWgY1UJ88cZyXA',
-    appId: '1:881157721637:ios:2587063695e5ee82ec39cc',
+    appId: '1:881157721637:ios:4b01f6edc42ff964ec39cc',
     messagingSenderId: '881157721637',
     projectId: 'exnay-a6d8d',
     databaseURL: 'https://exnay-a6d8d-default-rtdb.firebaseio.com',
     storageBucket: 'exnay-a6d8d.firebasestorage.app',
     androidClientId: '881157721637-8kdhnu5vpvts77jua3htce8vl1dai22a.apps.googleusercontent.com',
-    iosClientId: '881157721637-odggetfojjcn05emtjm1ba3l43ua51fp.apps.googleusercontent.com',
-    iosBundleId: 'app.ngawin.ios',
+    iosClientId: '881157721637-b35bsog4sm2ao5gpoivsstffiq5d06v8.apps.googleusercontent.com',
+    iosBundleId: 'app.ngawinapp.ios',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(

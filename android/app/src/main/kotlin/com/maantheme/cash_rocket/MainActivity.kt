@@ -1,4 +1,4 @@
-package app.ngawin.ios
+package app.ngawinapp.ios
 
 import io.flutter.embedding.android.FlutterActivity
 
