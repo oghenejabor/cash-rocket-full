@@ -68,7 +68,7 @@ class DefaultFirebaseOptions {
     storageBucket: 'exnay-a6d8d.firebasestorage.app',
     androidClientId: '881157721637-8kdhnu5vpvts77jua3htce8vl1dai22a.apps.googleusercontent.com',
     iosClientId: '881157721637-e1fk30mahmgqkshtta00pntk8u06q3m3.apps.googleusercontent.com',
-    iosBundleId: 'com.maantheme.cashRocket',
+    iosBundleId: 'app.ngawin.ios',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
