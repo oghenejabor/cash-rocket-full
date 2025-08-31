@@ -11,6 +11,12 @@ workflows:
       - name: Get Flutter packages
         script: |
           flutter pub get
+      - name: Update Podfile iOS Deployment Target
+        script: |
+          cd ios
+          # Set minimum iOS version to 15.0
+          sed -i.bak 's/platform :ios, .*/platform :ios, '15.0'/' Podfile || echo "platform :ios, '15.0'" >> Podfile
+          cd ..
       - name: Update CocoaPods repos
         script: |
           cd ios
