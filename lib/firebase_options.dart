@@ -16,29 +16,17 @@ import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb, Tar
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -52,10 +40,58 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC3Od7B6uoSL00aLDA18vX9cIrQXXMFyA4',
-    appId: '1:379243505940:android:1985a76a2806344ed53a01',
-    messagingSenderId: '379243505940',
-    projectId: 'cash-rocket-1938d',
-    storageBucket: 'cash-rocket-1938d.appspot.com',
+    apiKey: 'AIzaSyCT3jxOWYY0CoxtMcA0KVguEtd7mV9xtY4',
+    appId: '1:881157721637:android:4ac5ab05bb0ceedeec39cc',
+    messagingSenderId: '881157721637',
+    projectId: 'exnay-a6d8d',
+    databaseURL: 'https://exnay-a6d8d-default-rtdb.firebaseio.com',
+    storageBucket: 'exnay-a6d8d.firebasestorage.app',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyBe1LD0CsflOniBJQI44qDtzvPwpJl4OQY',
+    appId: '1:881157721637:web:23f6c2fce4707e37ec39cc',
+    messagingSenderId: '881157721637',
+    projectId: 'exnay-a6d8d',
+    authDomain: 'exnay-a6d8d.firebaseapp.com',
+    databaseURL: 'https://exnay-a6d8d-default-rtdb.firebaseio.com',
+    storageBucket: 'exnay-a6d8d.firebasestorage.app',
+    measurementId: 'G-5YYRSP9VT7',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyCn1bx_Q1SoxGyICYaIWeWgY1UJ88cZyXA',
+    appId: '1:881157721637:ios:087981899d5ebc59ec39cc',
+    messagingSenderId: '881157721637',
+    projectId: 'exnay-a6d8d',
+    databaseURL: 'https://exnay-a6d8d-default-rtdb.firebaseio.com',
+    storageBucket: 'exnay-a6d8d.firebasestorage.app',
+    androidClientId: '881157721637-8kdhnu5vpvts77jua3htce8vl1dai22a.apps.googleusercontent.com',
+    iosClientId: '881157721637-e1fk30mahmgqkshtta00pntk8u06q3m3.apps.googleusercontent.com',
+    iosBundleId: 'com.maantheme.cashRocket',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyCn1bx_Q1SoxGyICYaIWeWgY1UJ88cZyXA',
+    appId: '1:881157721637:ios:2587063695e5ee82ec39cc',
+    messagingSenderId: '881157721637',
+    projectId: 'exnay-a6d8d',
+    databaseURL: 'https://exnay-a6d8d-default-rtdb.firebaseio.com',
+    storageBucket: 'exnay-a6d8d.firebasestorage.app',
+    androidClientId: '881157721637-8kdhnu5vpvts77jua3htce8vl1dai22a.apps.googleusercontent.com',
+    iosClientId: '881157721637-odggetfojjcn05emtjm1ba3l43ua51fp.apps.googleusercontent.com',
+    iosBundleId: 'app.ngawin.ios',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyBe1LD0CsflOniBJQI44qDtzvPwpJl4OQY',
+    appId: '1:881157721637:web:e22bca27bc666ef1ec39cc',
+    messagingSenderId: '881157721637',
+    projectId: 'exnay-a6d8d',
+    authDomain: 'exnay-a6d8d.firebaseapp.com',
+    databaseURL: 'https://exnay-a6d8d-default-rtdb.firebaseio.com',
+    storageBucket: 'exnay-a6d8d.firebasestorage.app',
+    measurementId: 'G-QVFCQTBN93',
+  );
+
 }

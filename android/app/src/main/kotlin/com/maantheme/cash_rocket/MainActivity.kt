@@ -1,4 +1,4 @@
-package com.maantheme.cash_rocket
+package app.ngawin.ios
 
 import io.flutter.embedding.android.FlutterActivity
 
